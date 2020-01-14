@@ -1,7 +1,8 @@
 $(document).ready(function() {
-  $(".btn-warning").click(function() {
-    $("p").removeClass();
-    $("p").toggle();
+  $(".btn").click(function(event) {
+   // $("p").removeClass();
+    $('.'+event.target.name).toggle();
+    //$(this).remove();
 
   });
 });
